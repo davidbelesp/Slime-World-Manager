@@ -85,6 +85,13 @@
                             </excludes>
                         </filter>
                     </filters>
+                    <relocations>
+                        <relocation>
+                            <pattern>org.yaml.snakeyaml</pattern>
+                            <shadedPattern>com.grinderwolf.swm.internal.org.yaml.snakeyaml</shadedPattern>
+                        </relocation>
+                    </relocations>
+
                 </configuration>
             </plugin>
         </plugins>
