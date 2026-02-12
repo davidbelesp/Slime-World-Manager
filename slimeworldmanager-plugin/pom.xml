@@ -41,7 +41,7 @@
             <artifactId>slimeworldmanager-nms-v1_8_R3</artifactId>
             <version>${project.version}</version>
         </dependency>
-        <dependency>
+        <!-- <dependency>
             <groupId>com.grinderwolf</groupId>
             <artifactId>slimeworldmanager-nms-v1_9_R1</artifactId>
             <version>${project.version}</version>
@@ -85,7 +85,7 @@
             <groupId>com.grinderwolf</groupId>
             <artifactId>slimeworldmanager-nms-v1_15_R1</artifactId>
             <version>${project.version}</version>
-        </dependency>
+        </dependency> -->
         <dependency>
             <groupId>com.github.luben</groupId>
             <artifactId>zstd-jni</artifactId>
@@ -171,6 +171,10 @@
                         <relocation>
                             <pattern>com.github.luben.zstd</pattern>
                             <shadedPattern>com.grinderwolf.swm.internal.zstd</shadedPattern>
+                        </relocation>
+                        <relocation>
+                            <pattern>org.yaml.snakeyaml</pattern>
+                            <shadedPattern>com.grinderwolf.swm.internal.org.yaml.snakeyaml</shadedPattern>
                         </relocation>
                     </relocations>
                 </configuration>
